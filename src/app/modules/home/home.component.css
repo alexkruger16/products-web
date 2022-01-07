@@ -1,4 +1,4 @@
-:host bodyHome{
+.bodyHome{
     overflow-x: hidden;
     max-height: calc(100vh - 140px) !important;
     min-height: 0px;

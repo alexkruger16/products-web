@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "a043294c-a1f5-4f83-9382-d757b1e6df7b"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "olla-santa-app": {
+    "products-web": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/olla-santa-app",
+            "outputPath": "dist/products-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "olla-santa-app:build"
+            "browserTarget": "products-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "olla-santa-app:build:production"
+              "browserTarget": "products-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "olla-santa-app:build"
+            "browserTarget": "products-web:build"
           }
         },
         "test": {
@@ -113,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "olla-santa-app:serve"
+            "devServerTarget": "products-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "olla-santa-app:serve:production"
+              "devServerTarget": "products-web:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "olla-santa-app"
+  "defaultProject": "products-web"
 }

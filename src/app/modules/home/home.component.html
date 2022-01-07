@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row justify-content-md-left">
+    <ng-container *ngTemplateOutlet="headerTemplate"></ng-container>
+  </div>
+  <div class="row bodyHome">
+    <ng-container *ngTemplateOutlet="bodyTemplate"></ng-container>
+  </div>
+  <div class="row">
+    <ng-container *ngTemplateOutlet="footerTemplate"></ng-container>
+  </div>
+</div>
+
+<ng-template #headerTemplate>
+  <div class="col-md-auto">
+    Contenido centrado de las opciones de cabecera
+  </div>
+</ng-template>
+
+<ng-template #bodyTemplate>
+  <div class="col-md-auto">
+    <p-tabMenu [model]="items"></p-tabMenu>
+  </div>
+</ng-template>
+
+<ng-template #footerTemplate>
+  <footer>
+    pie de pagina
+  </footer>
+</ng-template>
+

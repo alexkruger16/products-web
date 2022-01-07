@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/saga-blue/theme.css";
+@import "~primeicons/primeicons.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+  
+ 
+body {
+    font-family: var(--font-family,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol");
+    background-color: #17212f;
+    color: var(--text-color);
+    padding: 0;
+    margin: 0;
+    min-height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+body.layout-scroll-block {
+    overflow: hidden
+}
+
+:root {
+    --surface-a: #1f2d40;
+    --surface-b: #17212f;
+    --surface-c: #293647;
+    --surface-d: #304562;
+    --surface-e: #1f2d40;
+    --surface-f: #1f2d40;
+    --text-color: rgba(255,255,255,.87);
+    --text-color-secondary: rgba(255,255,255,.60);
+    --primary-color: #64B5F6;
+    --primary-color-text: #212529;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
